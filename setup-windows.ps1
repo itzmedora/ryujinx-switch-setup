@@ -15,7 +15,7 @@ New-Item -ItemType Directory -Path $nandDir -Force | Out-Null
 New-Item -ItemType Directory -Path $romDir -Force | Out-Null
 
 Write-Host ">> [1/4] Dang tai ban build Ryujinx..." -ForegroundColor Yellow
-$ryuReleaseUrl = "https://github.com/Ryujinx/release-channel-master/releases/download/1.1.1340/ryujinx-1.1.1340-win_x64.zip"
+$ryuReleaseUrl = "https://archive.org/download/ryujinx-1.1.1403/ryujinx-1.1.1403-win_x64.zip"
 curl.exe -L -A "Mozilla/5.0" $ryuReleaseUrl -o $tempZip
 
 Write-Host ">> Giai nen Ryujinx vao $baseDir..." -ForegroundColor Yellow
